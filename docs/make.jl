@@ -10,107 +10,48 @@ using MultiDocumenter
 import Documenter
 
 clonedir = ("--temp" in ARGS) ? mktempdir() : joinpath(@__DIR__, "clones")
-outpath = mktempdir()
+outpath = joinpath(@__DIR__, "build/")
 @info """
 Cloning packages into: $(clonedir)
 Building aggregate site into: $(outpath)
 """
 
-@info "Building Documenter site for MultiDocumenter"
-open(joinpath(@__DIR__, "src", "index.md"), write = true) do io
-    write(io, read(joinpath(@__DIR__, "..", "README.md")))
-    write(
-        io,
-        """
-
-        ## Docstrings
-
-        ```@autodocs
-        Modules = [MultiDocumenter]
-        ```
-        """,
+function inhouse_ref(name)
+    return MultiDocumenter.MultiDocRef(
+        upstream = joinpath(clonedir, name),
+        path = name,
+        name = name,
+        giturl = "https://github.com/QuantumKitHub/$name.jl.git",
     )
 end
-Documenter.makedocs(
-    sitename = "MultiDocumenter",
-    modules = [MultiDocumenter],
-    warnonly = true,
-    pages = ["index.md", "internal.md"],
-)
+
 
 @info "Building aggregate MultiDocumenter site"
 docs = [
-    # We also add MultiDocumenter's own generated pages
-    MultiDocumenter.MultiDocRef(
-        upstream = joinpath(@__DIR__, "build"),
-        path = "docs",
-        name = "MultiDocumenter",
-        fix_canonical_url = false,
+    MultiDocumenter.DropdownNav(
+        "Toolbox",
+        [
+            inhouse_ref("MatrixAlgebraKit"),
+            inhouse_ref("TensorOperations"),
+            # inhouse_ref("SparseArrayKit"),
+        ],
     ),
     MultiDocumenter.DropdownNav(
-        "Debugging",
+        "Tensors",
         [
-            MultiDocumenter.MultiDocRef(
-                upstream = joinpath(clonedir, "Infiltrator"),
-                path = "inf",
-                name = "Infiltrator",
-                giturl = "https://github.com/JuliaDebug/Infiltrator.jl.git",
-            ),
-            MultiDocumenter.MultiDocRef(
-                upstream = joinpath(clonedir, "JuliaInterpreter"),
-                path = "debug",
-                name = "JuliaInterpreter",
-                giturl = "https://github.com/JuliaDebug/JuliaInterpreter.jl.git",
-            ),
+            inhouse_ref("TensorKit"),
+            inhouse_ref("TensorKitTensors"),
+            # inhouse_ref("TensorKitSectors"),
+            # inhouse_ref("SUNRepresentations"),
+            # inhouse_ref("CategoryData"),
         ],
     ),
-    MultiDocumenter.MegaDropdownNav(
-        "Mega Debugger",
+    MultiDocumenter.DropdownNav(
+        "Tensor Networks",
         [
-            MultiDocumenter.Column(
-                "Column 1",
-                [
-                    MultiDocumenter.MultiDocRef(
-                        upstream = joinpath(clonedir, "Infiltrator"),
-                        path = "inf",
-                        name = "Infiltrator",
-                        giturl = "https://github.com/JuliaDebug/Infiltrator.jl.git",
-                    ),
-                    MultiDocumenter.MultiDocRef(
-                        upstream = joinpath(clonedir, "JuliaInterpreter"),
-                        path = "debug",
-                        name = "JuliaInterpreter",
-                        giturl = "https://github.com/JuliaDebug/JuliaInterpreter.jl.git",
-                    ),
-                    MultiDocumenter.Link("Lux", "https://github.com/avik-pal/Lux.jl"),
-                ],
-            ),
-            MultiDocumenter.Column(
-                "Column 2",
-                [
-                    MultiDocumenter.MultiDocRef(
-                        upstream = joinpath(clonedir, "Infiltrator"),
-                        path = "inf",
-                        name = "Infiltrator",
-                        giturl = "https://github.com/JuliaDebug/Infiltrator.jl.git",
-                    ),
-                    MultiDocumenter.MultiDocRef(
-                        upstream = joinpath(clonedir, "JuliaInterpreter"),
-                        path = "debug",
-                        name = "JuliaInterpreter",
-                        giturl = "https://github.com/JuliaDebug/JuliaInterpreter.jl.git",
-                    ),
-                ],
-            ),
+            inhouse_ref("MPSKit"),
+            inhouse_ref("PEPSKit"),
         ],
-    ),
-    MultiDocumenter.MultiDocRef(
-        upstream = joinpath(clonedir, "DataSets"),
-        path = "data",
-        name = "DataSets",
-        giturl = "https://github.com/JuliaComputing/DataSets.jl.git",
-        # or use ssh instead for private repos:
-        # giturl = "git@github.com:JuliaComputing/DataSets.jl.git",
     ),
 ]
 
@@ -121,8 +62,8 @@ MultiDocumenter.make(
         index_versions = ["stable"],
         engine = MultiDocumenter.PageFind,
     ),
-    rootpath = "/MultiDocumenter.jl/",
-    canonical_domain = "https://juliacomputing.github.io/",
+    rootpath = "/QuantumKitHubDocs.jl/",
+    canonical_domain = "https://quantumkithub.github.io/",
     sitemap = true,
 )
 
@@ -159,6 +100,6 @@ if "deploy" in ARGS
         @info "No changes to aggregated documentation."
     end
 else
-    @info "Skipping deployment, 'deploy' not passed. Generated files in docs/out." ARGS
-    cp(outpath, joinpath(@__DIR__, "out"), force = true)
+    # @info "Skipping deployment, 'deploy' not passed. Generated files in docs/out." ARGS
+    # cp(outpath, joinpath(@__DIR__, "out"), force = true)
 end
