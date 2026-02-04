@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/changelog/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/classic2d/1.hard-hexagon/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/1.ising-cft/</loc></url>
