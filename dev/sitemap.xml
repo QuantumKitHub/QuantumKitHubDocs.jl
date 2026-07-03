@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/404.html</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/changelog.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/changelog/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/classic2d/1.hard-hexagon/</loc></url>
@@ -12,15 +14,24 @@
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/6.hubbard/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/7.xy-finiteT/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/8.bose-hubbard/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/lib/lib.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/lib/lib/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/algorithms.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/algorithms/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/conventions/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/environments.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/environments/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/intro.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/intro/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/lattices.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/lattices/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/operators.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/operators/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/parallelism.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/parallelism/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/states.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/states/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/references.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/references/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/search/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/tut/anyonic_statmech/</loc></url>
