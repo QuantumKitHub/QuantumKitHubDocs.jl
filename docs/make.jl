@@ -33,6 +33,7 @@ docs = [
         [
             inhouse_ref("MatrixAlgebraKit"),
             inhouse_ref("TensorOperations"),
+            inhouse_ref("VectorInterface"),
             # inhouse_ref("SparseArrayKit"),
         ],
     ),
@@ -41,7 +42,7 @@ docs = [
         [
             inhouse_ref("TensorKit"),
             inhouse_ref("TensorKitTensors"),
-            # inhouse_ref("TensorKitSectors"),
+            inhouse_ref("TensorKitSectors"),
             # inhouse_ref("SUNRepresentations"),
             # inhouse_ref("CategoryData"),
         ],
@@ -51,6 +52,7 @@ docs = [
         [
             inhouse_ref("MPSKit"),
             inhouse_ref("PEPSKit"),
+            inhouse_ref("TNRKit"),
         ],
     ),
 ]
