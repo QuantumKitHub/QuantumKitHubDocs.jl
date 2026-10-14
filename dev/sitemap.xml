@@ -7,6 +7,14 @@
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/contributing.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/classic2d/1.hard-hexagon/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/dynamics/ising-dqpt/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/dynamics/xy-finiteT/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/excitations/haldane/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/groundstates/bose-hubbard/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/groundstates/haldane-spt/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/groundstates/hubbard/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/groundstates/ising-cft/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/groundstates/xxz-heisenberg/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/1.ising-cft/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/2.haldane/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/3.ising-dqpt/</loc></url>
@@ -15,6 +23,7 @@
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/6.hubbard/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/7.xy-finiteT/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/quantum1d/8.bose-hubbard/</loc></url>
+<url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/examples/statmech/hard-hexagon/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/lib/lib.html</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/lib/lib/</loc></url>
 <url><loc>https://quantumkithub.github.io/QuantumKitHubDocs.jl/MPSKit/stable/man/algorithms.html</loc></url>
